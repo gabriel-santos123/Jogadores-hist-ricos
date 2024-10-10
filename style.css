@@ -78,7 +78,7 @@ header {
 
 .categoria-videos a {
     display: inline-block;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .categoria-videos img {
@@ -88,9 +88,10 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.categoria-videos img:hover {
-    transform: scale(1.05);
+.categoria-videos a:hover {
+    transform: translateY(-5px); /* Movimento ao passar o mouse */
 }
+
 
 .ranking {
     text-align: center;
