@@ -5,29 +5,34 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
     color: #333;
     position: relative;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #34495e;
+    color: #ecf0f1;
     text-align: center;
     padding: 20px;
     font-size: 28px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #e74c3c;
 }
 
 .chamada {
-    background: #29221f;
-    padding: 2em;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    padding: 3em 1em;
     color: #fcf7c5;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .chamada-texto {
@@ -38,11 +43,12 @@ header {
 .chamada-texto h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .chamada-texto p {
     font-size: 20px;
-    color: #7f8c8d;
+    color: #ecf0f1;
 }
 
 .categoria {
@@ -70,9 +76,9 @@ header {
 .categoria-videos img {
     width: 200px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     transition: transform 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .categoria-videos img:hover {
@@ -82,10 +88,10 @@ header {
 .ranking {
     text-align: center;
     margin: 40px 20px;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ranking h2 {
@@ -103,18 +109,23 @@ header {
 .ranking-item {
     background: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     margin: 10px;
     width: 90%;
     max-width: 600px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.ranking-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .ranking-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2980b9;
+    color: #e74c3c;
 }
 
 .ranking-item p {
@@ -124,5 +135,6 @@ header {
 }
 
 .ranking-item iframe {
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
